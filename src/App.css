@@ -1,0 +1,110 @@
+body {
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    padding: 2rem;
+  }
+  
+  .main-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .todo-list-container {
+    width: 100%;
+  }
+  
+  .todo-input-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.2rem;
+  }
+  
+  .todo-input {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    border: 1px solid #a1c4fd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+  }
+  
+  .todo-input:focus {
+    border: 1.5px solid #4f8cff;
+  }
+  
+  .add-btn {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .add-btn:hover {
+    background: #357ae8;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7faff;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    box-shadow: 0 1px 4px rgba(160, 200, 255, 0.12);
+    transition: background 0.2s;
+  }
+  
+  .todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #7da0ca;
+  }
+  
+  .todo-text {
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #e57373;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.2s;
+    border-radius: 50%;
+    padding: 0 8px;
+  }
+  
+  .delete-btn:hover {
+    color: #b71c1c;
+    background: #ffeaea;
+  }
+  
